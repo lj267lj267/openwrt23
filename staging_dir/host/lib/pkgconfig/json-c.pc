@@ -1,0 +1,12 @@
+prefix=/builder/shared-workdir/build/staging_dir/host
+exec_prefix=/builder/shared-workdir/build/staging_dir/host
+libdir=/builder/shared-workdir/build/staging_dir/host/lib
+includedir=/builder/shared-workdir/build/staging_dir/host/include
+
+Name: json-c
+Description: A JSON implementation in C
+Version: 0.16
+Requires:
+Libs.private: 
+Libs: -L${libdir} -ljson-c
+Cflags: -I${includedir} -I${includedir}/json-c
