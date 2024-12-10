@@ -26,7 +26,7 @@
 
 	partition@70000 {
 		label = "firmware";
-		reg = <0x070000 0xf80000>;
+		reg = <0x070000 0x1f80000>;
 		compatible = "openwrt,uimage", "denx,uimage";
 		openwrt,ih-magic = <0x33373031>;
 		openwrt,ih-type = <IH_TYPE_FILESYSTEM>;
